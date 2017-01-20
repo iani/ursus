@@ -1,0 +1,7 @@
+
+20 Jan 2017 17:51
+
+Beginning data sonification with Vasilis Agiomyrgianakis.
+
+Step 1: Python-> SC data communication via OSC
+Step 2: Reading data from file into SC and sonifying them.
