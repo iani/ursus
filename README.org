@@ -1,18 +1,13 @@
 
-20 Jan 2017 17:51
 
-Beginning data sonification with Vasilis Agiomyrgianakis.
+* iPython and Anaconda as Platform for Open Data Science Platform
 
-Step 1: Python-> SC data communication via OSC
-Step 2: Reading data from file into SC and sonifying them.
-
-
-* Geting started with iPython on MacOS (And EMACS)
+** Geting started with iPython on MacOS (And EMACS)
 :PROPERTIES:
 :DATE:     <2017-01-20 Fri 17:53>
 :END:
 
-** What is iPython?
+*** What is iPython?
 
 See: https://www.wikiwand.com/en/IPython
 
@@ -26,13 +21,13 @@ IPython is a command shell for interactive computing in multiple programming lan
 - Tools for parallel computing.
 #+END_QUOTE
 
-** Why iPython
+*** Why iPython
 
 1. iPython makes a buffer behave like an SC workspace, i.e. one can run several displayed code fragments separately on demand, edit any of them, and re-run them.  This greatly facilitates programming and testing..
 2. iPython also provides easy graphic display capabilities (which are basic for working experimentally with data).
 3. For the above reason 2, iPython is the recommended/required platform for working with data from the CERN Open Data repository.
 
-** How does iPython work? I.e.: What is it made up of, and how do its components work together?
+*** How does iPython work? I.e.: What is it made up of, and how do its components work together?
 
 In order to coordinate multiple Python interpreter sessions and send them code (text) for execution, iPython requires a Server.  The server works on HTTP basis. The server receives code text via http and forwards it to python processes for execution.  The server also handles the display of the results from executed code.  The http protocol enables the server to use a usual http-based web-browser (i.e. Chrome, Safari etc.) to display and edit code and to display the results.  The web application that enables the interaction with the server using a browser is called "Jupyter Notebook" (see http://jupyter-notebook.readthedocs.io/en/latest/notebook.html).
 
@@ -42,11 +37,16 @@ Jupyter is part of a larger framework for Python applications, which is called /
 
 To use iPython, you need to start a Jupyter server and log onto it. It is possible to log into Jupyter from EMACS. However, running a Jupyter server remains a hard prerequisite for working with iPython.
 
-** How to install iPython for EMACS
+*** How to install iPython for EMACS
 
-*** Prerequisites: Python version + Other packages that need to be installed first
+**** Prerequisites: Python version + Other packages that need to be installed first
 
 1. On MacOS (10.12 or later) Upgrade Python to v 3.5. Note: This is not strictly required, but 3 is considered the currently live version while v2 is legacy.
    Download 3.5 from: https://www.python.org/downloads/mac-osx/
 2. General hard requirement: Install /Anaconda/: https://www.continuum.io/downloads.
 3. For working with EMACS only: Install the /Emacs ipython Notebook/ package (/EIN/): https://github.com/tkf/emacs-ipython-notebook
+
+
+* Python -> SC for live sonification
+
+
