@@ -40,7 +40,7 @@ Note that the concept of implementing an http server using python resembles the 
 
 Jupyter is part of a larger framework for Python applications, which is called /Anaconda/, which is self-defined as "Leading Open Data Science Platform Powered by Python" (https://www.continuum.io/anaconda-overview, https://www.continuum.io/downloads).  For practical purposes, it is recommended to install Anaconda and use the Jupyter platform which is provided there. 
 
-To use iPython, you need to start a Jupyter server and log onto it. It is possible to log into Jupyter from EMACS. However, Jupyter running a Jupyter server remains a hard prerequisite for working with iPython.
+To use iPython, you need to start a Jupyter server and log onto it. It is possible to log into Jupyter from EMACS. However, running a Jupyter server remains a hard prerequisite for working with iPython.
 
 ** How to install iPython for EMACS
 
