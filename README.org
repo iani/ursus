@@ -5,3 +5,48 @@ Beginning data sonification with Vasilis Agiomyrgianakis.
 
 Step 1: Python-> SC data communication via OSC
 Step 2: Reading data from file into SC and sonifying them.
+
+
+* Geting started with iPython on MacOS (And EMACS)
+:PROPERTIES:
+:DATE:     <2017-01-20 Fri 17:53>
+:END:
+
+** What is iPython?
+
+See: https://www.wikiwand.com/en/IPython
+
+#+BEGIN_QUOTE
+IPython is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history. IPython provides the following features:
+
+- Interactive shells (terminal and Qt-based).
+- A browser-based notebook with support for code, text, mathematical expressions, inline plots and other media.
+- Support for interactive data visualization and use of GUI toolkits.
+- Flexible, embeddable interpreters to load into one's own projects.
+- Tools for parallel computing.
+#+END_QUOTE
+
+** Why iPython
+
+1. iPython makes a buffer behave like an SC workspace, i.e. one can run several displayed code fragments separately on demand, edit any of them, and re-run them.  This greatly facilitates programming and testing..
+2. iPython also provides easy graphic display capabilities (which are basic for working experimentally with data).
+3. For the above reason 2, iPython is the recommended/required platform for working with data from the CERN Open Data repository.
+
+** How does iPython work? I.e.: What is it made up of, and how do its components work together?
+
+In order to coordinate multiple Python interpreter sessions and send them code (text) for execution, iPython requires a Server.  The server works on HTTP basis. The server receives code text via http and forwards it to python processes for execution.  The server also handles the display of the results from executed code.  The http protocol enables the server to use a usual http-based web-browser (i.e. Chrome, Safari etc.) to display and edit code and to display the results.  The web application that enables the interaction with the server using a browser is called "Jupyter Notebook" (see http://jupyter-notebook.readthedocs.io/en/latest/notebook.html).
+
+Note that the concept of implementing an http server using python resembles the idea of http server programmed in JavaScript that is the basis of =node.js=.  In fact, there are =node.js= implementations of Jupyter (https://github.com/notablemind/jupyter-nodejs, "A node.js kernel for jupyter/ipython").
+
+Jupyter is part of a larger framework for Python applications, which is called /Anaconda/, which is self-defined as "Leading Open Data Science Platform Powered by Python" (https://www.continuum.io/anaconda-overview, https://www.continuum.io/downloads).  For practical purposes, it is recommended to install Anaconda and use the Jupyter platform which is provided there. 
+
+To use iPython, you need to start a Jupyter server and log onto it. It is possible to log into Jupyter from EMACS. However, Jupyter running a Jupyter server remains a hard prerequisite for working with iPython.
+
+** How to install iPython for EMACS
+
+*** Prerequisites: Python version + Other packages that need to be installed first
+
+1. On MacOS (10.12 or later) Upgrade Python to v 3.5. Note: This is not strictly required, but 3 is considered the currently live version while v2 is legacy.
+   Download 3.5 from: https://www.python.org/downloads/mac-osx/
+2. General hard requirement: Install /Anaconda/: https://www.continuum.io/downloads.
+3. For working with EMACS only: Install the /Emacs ipython Notebook/ package (/EIN/): https://github.com/tkf/emacs-ipython-notebook
