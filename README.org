@@ -151,10 +151,22 @@ http://yt-project.org/data/D9p_500.tar.gz
 
 ****** Import data and run first visualisation example
 
-See instructions in
+See instructions in http://yt-project.org/doc/quickstart/simple_visualization.html
 
-http://yt-project.org/doc/quickstart/simple_visualization.html
+***** Obtain data for animation and sonification
+
+Here we use as starting point the example from CERN:
+https://github.com/particle-physics-playground/playground/blob/master/activities/ppp_experiment_000_cms.ipynb
+
+(Note: enzo is not used here, but we will revisit this topic at a later stage in the project)
+
+The above github repository was found via: http://particle-physics-playground.github.io/
 
 * Python -> SC for live sonification
 
+** install python-osc to send data from python to SC
+
+: pip install python-osc
+
+Note: package =pyosc= is not compatible with python3, but package =python-osc= is.
 
