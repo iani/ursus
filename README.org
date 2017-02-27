@@ -170,3 +170,12 @@ The above github repository was found via: http://particle-physics-playground.gi
 
 Note: package =pyosc= is not compatible with python3, but package =python-osc= is.
 
+** try out python-osc package
+
+Trying new iPython notebook here to see if imports from python-osc work and if the package itself works.
+
+See iPython notebook SEND_OSC.ipynb for code that worked.  The SC code for testing it was: 
+
+#+BEGIN_SRC sclang
+OSCFunc ({ | ... msg | msg.postln; }, '/filter');
+#+END_SRC
