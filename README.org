@@ -1,6 +1,6 @@
 
 
-* iPython and Anaconda as Platform for Open Data Science Platform
+* iPython and Anaconda as Platform for Open Data Science
 
 ** Geting started with iPython on MacOS (And EMACS)
 :PROPERTIES:
