@@ -37,7 +37,7 @@ Jupyter is part of a larger framework for Python applications, which is called /
 
 To use iPython, you need to start a Jupyter server and log onto it. It is possible to log into Jupyter from EMACS. However, running a Jupyter server remains a hard prerequisite for working with iPython.
 
-*** How to install iPython for EMACS (on Mac OS X)
+*** Installing iPython for EMACS (on Mac OS X)
 
 **** Prerequisites: Python version + Other packages that need to be installed first
 
@@ -95,6 +95,8 @@ This enables EMACS to connect to the web-based jupyter notebook for python.  It 
 
 The repository is here: https://github.com/tkf/emacs-ipython-notebook
 However, for convenience, we installed the package from EMACS directly, using command: =package-list-packages= and then searching for =ein= and then typing: =i= to mark for install and =x= to execute the installation of marked packages.
+
+*** Running iPython notebook via Jupyter on EMACS
 ***** Start jupyter notebook on terminal.
 
 You will need this to communicate with iPython from EMACS.
